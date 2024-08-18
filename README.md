@@ -47,9 +47,7 @@ If you'd like to get in touch, you can reach me through:
 - **LinkedIn**: [Your LinkedIn Profile](#)
 - **GitHub**: [Your GitHub Profile](#)
 
-## License
 
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
