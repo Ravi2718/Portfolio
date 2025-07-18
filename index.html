@@ -5,16 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Raviprasad M - Cybersecurity Researcher, Ethical Hacker, and Software Developer. Explore my portfolio showcasing innovative projects in cybersecurity, web development, and AI.">
+    <meta name="keywords" content="Raviprasad M, Cybersecurity, Ethical Hacking, Software Developer, Portfolio, Python, JavaScript, Web Development">
+    <meta name="author" content="Raviprasad M">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Raviprasad M - Portfolio">
+    <meta property="og:description" content="Cybersecurity Researcher, Ethical Hacker, and Software Developer">
+    <meta property="og:image" content="./img/cropedpic.png">
+    <meta property="og:url" content="https://nexgen-5cc26.web.app/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raviprasad M - Portfolio">
+    <meta name="twitter:description" content="Cybersecurity Researcher, Ethical Hacker, and Software Developer">
+    <meta name="twitter:image" content="./img/cropedpic.png">
+    
+    <title>Raviprasad M - Portfolio | Cybersecurity & Software Development</title>
     <link rel="shortcut icon" type="image/png" href="ic.png">
     <link rel="stylesheet" href="./files/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./files/style.css" as="style">
+    <link rel="preload" href="./files/script.js" as="script">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar" id="myLinks">
+        <a href="#" class="logo" aria-label="Portfolio Home">Portfolio</a>
+        <nav class="navbar" id="myLinks" role="navigation" aria-label="Main navigation">
             <a href="#Home" style="--i:1" class="active">Home</a>
             <a href="#About" style="--i:2">About</a>
             <a href="#skills" style="--i:3">Skills</a>
@@ -24,77 +59,131 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section class="home" id="Home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <div class="name-container">
-                <h1 style="color:#0ef;" class="name">Raviprasad M</h1>
+    <main id="main-content">
+        <!-- Home Section -->
+        <section class="home" id="Home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <div class="name-container">
+                    <h1 style="color:#0ef;" class="name">Raviprasad M</h1>
+                </div>
+                <div class="home-illustration">
+                    <img src="./img/download.svg" alt="Technical illustration" class="responsive">
+                </div>
+                <div class="typed-container">
+                    <h2>And I'm a <span class="text"></span></h2>
+                </div>
+                <div class="img">
+                    <img src="./img/cropedpic.png" alt="Raviprasad M - Professional headshot" class="responsive">
+                </div>
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                </div>
+                
+                <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="btn-box" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bx-download'></i>
+                    Download Resume
+                </a>
             </div>
-            <div class="home-illustration">
-                <img src="./img/download.svg" alt="Illustration" class="responsive">
-            </div>
-            <span class="text"></span>
-            <div class="img">
-                <img src="./img/cropedpic.png" alt="Raviprasad's Profile Picture" class="responsive">
-            </div>
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-                <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            </div>
-            
-            <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="About">
-        <div class="about">
-            <div class="about-img">
-                <img src="./img/midclg.jpg" alt="About Me Image" class="abt-res">
+        <!-- About Section -->
+        <section id="About">
+            <div class="about">
+                <div class="about-img">
+                    <img src="./img/midclg.jpg" alt="Raviprasad M at college" class="abt-res">
+                </div>
+                <div class="about-text">
+                    <h2>About <span>Me</span></h2>
+                    <p>
+                        I'm a passionate tech enthusiast with a focus on innovation, security, and continuous self-improvement. 💻🔐 My journey began with Arduino and Raspberry Pi projects, which sparked my interest in hardware and embedded systems. This foundation led me to explore ethical hacking and cybersecurity, where I discovered my passion for protecting digital assets and understanding system vulnerabilities. 🛠️
+                        <br><br>
+                        Beyond technology, I believe in maintaining a balanced lifestyle. I love reading 📚 to gain new perspectives and stay updated with industry trends, cycling 🚴‍♂️ to maintain physical and mental balance, and cooking 🍳—both in the kitchen and in life, I'm always crafting new ways to grow and improve.
+                        <br><br>
+                        I'm driven by the desire to learn and build meaningful solutions. I'm excited to connect with like-minded individuals to share ideas, collaborate on projects, and create something extraordinary together! 🚀
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="abtbtn-box" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bx-download'></i>
+                        Download Resume
+                    </a>
+                </div>
             </div>
-            <div class="about-text">
-                <h2>About <span>Me</span></h2>
-                <p>
-                    I'm a tech enthusiast passionate about innovation, security, and self-improvement. 💻🔐 My journey began with Arduino and Raspberry Pi projects, later expanding into ethical hacking and cybersecurity. 🛠️ I love reading 📚 for new perspectives, cycling 🚴‍♂️ for balance, and cooking 🍳—both in the kitchen and in life, always crafting new ways to grow.
-                    <br><br>
-                    Driven by learning and building, I'm excited to connect with like-minded individuals to share ideas and create something extraordinary! 🚀
-                </p>
-                <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="abtbtn-box" target="_blank">Download Resume</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-          <h1 class="sub-title">Technical <span>Skills</span></h1>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <i class='bx bx-code-alt'></i>
-              <h3>Frontend</h3>
-              <p>HTML, CSS, JavaScript</p>
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+              <h2 class="sub-title">Technical <span>Skills</span></h2>
+              <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                  <i class='bx bx-code-alt'></i>
+                  <h3>Frontend</h3>
+                  <p>HTML5, CSS3, JavaScript, React</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                  <i class='bx bx-server'></i>
+                  <h3>Backend</h3>
+                  <p>Python, Java, Node.js</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                  </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                  <i class='bx bx-data'></i>
+                  <h3>Database</h3>
+                  <p>SQL, MongoDB, Firebase</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                  </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                  <i class='bx bx-cloud'></i>
+                  <h3>Cloud & DevOps</h3>
+                  <p>AWS, Docker, Git</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                  </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                  <i class='bx bx-shield-quarter'></i>
+                  <h3>Cybersecurity</h3>
+                  <p>Ethical Hacking, VAPT, Network Security</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                  <i class='bx bx-brain'></i>
+                  <h3>AI & ML</h3>
+                  <p>Python, TensorFlow, Computer Vision</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="65%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="skill-card">
-              <i class='bx bx-server'></i>
-              <h3>Backend</h3>
-              <p>Python, Java</p>
-            </div>
-            <div class="skill-card">
-              <i class='bx bx-data'></i>
-              <h3>Database</h3>
-              <p>SQL</p>
-            </div>
-            <div class="skill-card">
-              <i class='bx bx-cloud'></i>
-              <h3>Cloud</h3>
-              <p>AWS</p>
-            </div>
-          </div>
-        </div>
-    </section>
+        </section>
+
     <!-- Projects Section -->
     <section id="Projects">
         <div id="portfolio" class="services">
@@ -210,34 +299,80 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="Contact">
-        <div class="contact-container">
-          <div class="contact-header">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's Work Together</h4>
-          </div>
-          
-          <div class="contact-content">
-            <ul class="contact-info">
-              <li>
-                <i class='bx bxs-send'></i>
-                <a href="mailto:ravigeetha915@gmail.com">ravigeetha915@gmail.com</a>
-              </li>
-              <li>
-                <i class='bx bxs-phone-call'></i>
-                <a href="tel:9360462915">+91 9360462915</a>
-              </li>
-            </ul>
-            
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-                <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        <!-- Contact Section -->
+        <section class="contact-section" id="Contact">
+            <div class="contact-container">
+              <div class="contact-header">
+                <h2>Contact <span>Me</span></h2>
+                <h4>Let's Work Together</h4>
+                <p>Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+              </div>
+              
+              <div class="contact-content">
+                <div class="contact-form-container">
+                  <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                      <input type="text" id="name" name="name" placeholder="Your Name" required>
+                      <i class='bx bx-user'></i>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Your Email" required>
+                      <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                      <i class='bx bx-chat'></i>
+                    </div>
+                    <div class="form-group">
+                      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                      <i class='bx bx-message-dots'></i>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                      <i class='bx bx-send'></i>
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+                
+                <div class="contact-info-container">
+                  <ul class="contact-info">
+                    <li>
+                      <i class='bx bxs-send'></i>
+                      <div class="info-content">
+                        <h4>Email</h4>
+                        <a href="mailto:ravigeetha915@gmail.com">ravigeetha915@gmail.com</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class='bx bxs-phone-call'></i>
+                      <div class="info-content">
+                        <h4>Phone</h4>
+                        <a href="tel:9360462915">+91 9360462915</a>
+                      </div>
+                    </li>
+                    <li>
+                      <i class='bx bxs-location-plus'></i>
+                      <div class="info-content">
+                        <h4>Location</h4>
+                        <p>Tamil Nadu, India</p>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="social-links">
+                    <h4>Follow Me</h4>
+                    <div class="home-sci">
+                        <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     
     <!-- Footer -->
     <footer class="site-footer">
