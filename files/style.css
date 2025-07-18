@@ -46,33 +46,15 @@
     
     /* Hamburger Menu Icon */
     .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
+        display: none;
         cursor: pointer;
+        z-index: 100;
     }
     
-    .menu-toggle span {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background: #fff;
-        border-radius: 3px;
+    .menu-toggle i {
+        color: white;
+        font-size: 28px;
         transition: all 0.3s ease;
-    }
-    
-    .menu-toggle.active span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-    
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
     }
 }
 
@@ -1798,18 +1780,6 @@ h1, h2 {
     .contact-text h4 {
       font-size: 16px;
     }
-  }
-  
-  /* ============ Hamburger Menu ============ */
-  .menu-toggle {
-    display: none;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
-  .menu-toggle i {
-    color: white;
-    font-size: 28px;
   }
   
   @media (max-width: 767px) {
