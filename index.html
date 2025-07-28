@@ -1,254 +1,323 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="ic.png">
-    <link rel="stylesheet" href="./files/style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raviprasad | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/ic.png" type="image/png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./files/style.css" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar" id="myLinks">
-            <a href="#Home" style="--i:1" class="active">Home</a>
-            <a href="#About" style="--i:2">About</a>
-            <a href="#skills" style="--i:3">Skills</a>
-            <a href="#Projects" style="--i:4">Projects</a>
-            <a href="#Services" style="--i:5">Services</a>
-            <a href="#Contact" style="--i:6">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#Home" class="active" style="--i:1">Home</a>
+      <a href="#About" style="--i:2">About</a>
+      <a href="#skills" style="--i:3">Skills</a>
+      <a href="#Projects" style="--i:4">Projects</a>
+      <a href="#Services" style="--i:5">Services</a>
+      <a href="#Contact" style="--i:6">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section class="home" id="Home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <div class="name-container">
-                <h1 style="color:#0ef;" class="name">Raviprasad M</h1>
-            </div>
-            <div class="home-illustration">
-                <img src="./img/download.svg" alt="Illustration" class="responsive">
-            </div>
-            <span class="text"></span>
-            <div class="img">
-                <img src="./img/cropedpic.png" alt="Raviprasad's Profile Picture" class="responsive">
-            </div>
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-                <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            </div>
-            
-            <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
-        </div>
-    </section>
+  <!-- Home -->
+  <section class="home" id="Home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <div class="name-container">
+        <h1 class="name">Raviprasad M</h1>
+      </div>
+      <span class="text"></span>
 
-    <!-- About Section -->
-    <section id="About">
-        <div class="about">
-            <div class="about-img">
-                <img src="./img/midclg.jpg" alt="About Me Image" class="abt-res">
-            </div>
-            <div class="about-text">
-                <h2>About <span>Me</span></h2>
-                <p>
-                    I'm a tech enthusiast passionate about innovation, security, and self-improvement. 💻🔐 My journey began with Arduino and Raspberry Pi projects, later expanding into ethical hacking and cybersecurity. 🛠️ I love reading 📚 for new perspectives, cycling 🚴‍♂️ for balance, and cooking 🍳—both in the kitchen and in life, always crafting new ways to grow.
-                    <br><br>
-                    Driven by learning and building, I'm excited to connect with like-minded individuals to share ideas and create something extraordinary! 🚀
-                </p>
-                <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" style="--i:11" class="abtbtn-box" target="_blank">Download Resume</a>
-            </div>
-        </div>
-    </section>
+      <div class="img">
+        <img src="img/cropedpic.png" alt="Raviprasad Profile" class="responsive" />
+      </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-          <h1 class="sub-title">Technical <span>Skills</span></h1>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <i class='bx bx-code-alt'></i>
-              <h3>Frontend</h3>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-            <div class="skill-card">
-              <i class='bx bx-server'></i>
-              <h3>Backend</h3>
-              <p>Python, Java</p>
-            </div>
-            <div class="skill-card">
-              <i class='bx bx-data'></i>
-              <h3>Database</h3>
-              <p>SQL</p>
-            </div>
-            <div class="skill-card">
-              <i class='bx bx-cloud'></i>
-              <h3>Cloud</h3>
-              <p>AWS</p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="Projects">
-        <div id="portfolio" class="services">
-            <div class="main-text" id="serv">
-                <h2>My <span>Projects</span></h2>
-                <div class="serv-container">
-                    <!-- Original Images -->
-                    <div class="row">
-                        <img src="./img/project/PORT.jpg" alt="Port Scanning Project">
-                        <div class="layer">
-                            <h5>Port Scanning 🔍 & Risk Assessment ⚠️</h5>
-                            <p>Automated port scanning and risk assessment with Python + Nmap for efficient VAPT, categorizing risks and providing mitigation strategies.</p>
-                            <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-vulnerabilityassessment-activity-7295011206942076928-x2Wo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADE58PIBDV27jo5d1X1s5lQS4RE2XwmxVEY"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/DNS.jpg" alt="DNS Spoofing Project">
-                        <div class="layer">
-                            <h5>🔍 DNS Spoofing 💻</h5>
-                            <p>I explored DNS spoofing beyond misleading online claims, faced modern security challenges, and learned that hands-on persistence is key to real cybersecurity understanding.</p>
-                            <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-dnsspoofing-activity-7291674197246754818-1eWy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADE58PIBDV27jo5d1X1s5lQS4RE2XwmxVEY"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/Pass.png" alt="Password Cracker Project">
-                        <div class="layer">
-                            <h5>🛠️🔑 Password Cracker ⚡💻</h5>
-                            <p>Unlock forgotten passwords effortlessly! A fast, powerful tool for ethical hacking and cybersecurity testing. Precision meets speed—no lock stays closed forever!</p>
-                            <a href="https://github.com/Ravi2718/Password-Cracker"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/AI.jpg" alt="Virtual Mouse Controller Project">
-                        <div class="layer">
-                            <h5>🖱️ Virtual Mouse Controller 🎯 Using Hand Tracking ✋</h5>
-                            <p>Control your mouse cursor and simulate clicks using hand gestures with MediaPipe and Python.</p>
-                            <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/MAX.jpg" alt="Personal Assistant - MAX Project">
-                        <div class="layer">
-                            <h5>🤖 Personal Assistant - MAX 🚀</h5>
-                            <p>MAX is a Python voice assistant that executes tasks like opening apps, taking screenshots, and fetching information using voice commands for hands-free convenience.</p>
-                            <a href="https://github.com/Ravi2718/Personal-Assistant---MAX"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                
-                    <!-- Duplicate the first image at the end for seamless looping -->
-                    <div class="row">
-                        <img src="./img/project/PORT.jpg" alt="Port Scanning Project">
-                        <div class="layer">
-                            <h5>Port Scanning 🔍 & Risk Assessment ⚠️</h5>
-                            <p>Automated port scanning and risk assessment with Python + Nmap for efficient VAPT, categorizing risks and providing mitigation strategies.</p>
-                            <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-vulnerabilityassessment-activity-7295011206942076928-x2Wo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADE58PIBDV27jo5d1X1s5lQS4RE2XwmxVEY"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/DNS.jpg" alt="DNS Spoofing Project">
-                        <div class="layer">
-                            <h5>🔍 DNS Spoofing 💻</h5>
-                            <p>I explored DNS spoofing beyond misleading online claims, faced modern security challenges, and learned that hands-on persistence is key to real cybersecurity understanding.</p>
-                            <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-dnsspoofing-activity-7291674197246754818-1eWy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADE58PIBDV27jo5d1X1s5lQS4RE2XwmxVEY"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/Pass.png" alt="Password Cracker Project">
-                        <div class="layer">
-                            <h5>🛠️🔑 Password Cracker ⚡💻</h5>
-                            <p>Unlock forgotten passwords effortlessly! A fast, powerful tool for ethical hacking and cybersecurity testing. Precision meets speed—no lock stays closed forever!</p>
-                            <a href="https://github.com/Ravi2718/Password-Cracker"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/AI.jpg" alt="Virtual Mouse Controller Project">
-                        <div class="layer">
-                            <h5>🖱️ Virtual Mouse Controller 🎯 Using Hand Tracking ✋</h5>
-                            <p>Control your mouse cursor and simulate clicks using hand gestures with MediaPipe and Python.</p>
-                            <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="./img/project/MAX.jpg" alt="Personal Assistant - MAX Project">
-                        <div class="layer">
-                            <h5>🤖 Personal Assistant - MAX 🚀</h5>
-                            <p>MAX is a Python voice assistant that executes tasks like opening apps, taking screenshots, and fetching information using voice commands for hands-free convenience.</p>
-                            <a href="https://github.com/Ravi2718/Personal-Assistant---MAX"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-                        </div>
-                    </div>
-                </div>
-   
-     <!-- Services Section -->
-    <section id="Services">
-        <div class="container">
-          <h1 class="sub-title">My <span>Services</span></h1>
-          <div class="services-grid">
-            <div class="service-card">
-              <i class='bx bx-code' style="color: #00eeff;"></i>
-              <h3>Web Development</h3>
-              <p>Plan, create and code internet sites and web pages with modern and artful design.</p>
-            </div>
-            <div class="service-card">
-              <i class='bx bx-shield-quarter' style="color: #00eeff;"></i>
-              <h3>Cyber Security</h3>
-              <p>Ethical hacking and system protection with vulnerability assessment and mitigation.</p>
-            </div>
-            <div class="service-card">
-              <i class='bx bxl-android' style="color: #00eeff;"></i>
-              <h3>Software Development</h3>
-              <p>Mobile and desktop application development with Java, Python, and modern frameworks.</p>
-            </div>
-          </div>
-        </div>
-    </section>
+      <div class="home-sci">
+        <a href="https://linkedin.com/in/raviprasadm" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://instagram.com/_.raviprasad_" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://youtube.com/@nothingtohide-4786" target="_blank"><i class='bx bxl-youtube'></i></a>
+        <a href="https://github.com/Ravi2718" target="_blank"><i class='bx bxl-github'></i></a>
+      </div>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="Contact">
-        <div class="contact-container">
-          <div class="contact-header">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's Work Together</h4>
-          </div>
-          
-          <div class="contact-content">
-            <ul class="contact-info">
-              <li>
-                <i class='bx bxs-send'></i>
-                <a href="mailto:ravigeetha915@gmail.com">ravigeetha915@gmail.com</a>
-              </li>
-              <li>
-                <i class='bx bxs-phone-call'></i>
-                <a href="tel:9360462915">+91 9360462915</a>
-              </li>
-            </ul>
-            
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/raviprasadm/" style="--i:7" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/_.raviprasad_/" style="--i:8" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.youtube.com/@nothingtohide-4786" style="--i:9" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
-                <a href="https://github.com/Ravi2718" style="--i:10" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-          <p>Developed by Raviprasad <i class='bx bx-copyright'></i> 2025</p>
-        </div>
-        <a href="#Home" class="back-to-top">
-          <i class='bx bx-up-arrow-alt'></i>
-        </a>
-    </footer>
+      <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" target="_blank" class="btn-box">Download Resume</a>
+    </div>
+  </section>
 
-    <script src="./files/script.js"></script>
+  <!-- About -->
+  <section id="About">
+    <div class="about">
+      <div class="about-img">
+        <img src="img/midclg.jpg" alt="About Image" class="abt-res" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I'm a tech enthusiast passionate about innovation, security, and self-improvement. 💻🔐 My journey began with Arduino and Raspberry Pi projects, then ethical hacking and cybersecurity. I love reading 📚, cycling 🚴‍♂️, and cooking 🍳 for growth and balance.<br><br>
+          I’m excited to connect and build something extraordinary! 🚀
+        </p>
+        <a href="https://drive.google.com/file/d/13MycTcThefypK5UDSoBArWKEuLsHtQEo/view?usp=sharing" target="_blank" class="abtbtn-box">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h1 class="sub-title">Technical <span>Skills</span></h1>
+      <div class="skills-grid">
+        <div class="skill-card"><i class='bx bx-code-alt'></i><h3>Frontend</h3><p>HTML, CSS, JavaScript</p></div>
+        <div class="skill-card"><i class='bx bx-server'></i><h3>Backend</h3><p>Python, Java</p></div>
+        <div class="skill-card"><i class='bx bx-data'></i><h3>Database</h3><p>SQL</p></div>
+        <div class="skill-card"><i class='bx bx-cloud'></i><h3>Cloud</h3><p>AWS</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects">
+    <div class="main-text"><h2>My <span>Projects</span></h2></div>
+    <div class="serv-container">
+      <!-- Project 1 -->
+      <div class="row">
+        <img src="./img/project/PORT.jpg" alt="Port Scanning Project">
+        <div class="layer">
+          <h5>Port Scanning 🔍 & Risk Assessment ⚠️</h5>
+          <p>Automated port scanning and risk assessment with Python + Nmap for efficient VAPT, categorizing risks and providing mitigation strategies.</p>
+          <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-vulnerabilityassessment-activity-7295011206942076928-x2Wo" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="row">
+        <img src="./img/project/DNS.jpg" alt="DNS Spoofing Project">
+        <div class="layer">
+          <h5>🔍 DNS Spoofing 💻</h5>
+          <p>I explored DNS spoofing beyond misleading online claims, faced modern security challenges, and learned that hands-on persistence is key to real cybersecurity understanding.</p>
+          <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-dnsspoofing-activity-7291674197246754818-1eWy" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="row">
+        <img src="./img/project/Pass.png" alt="Password Cracker Project">
+        <div class="layer">
+          <h5>🛠️🔑 Password Cracker ⚡💻</h5>
+          <p>Unlock forgotten passwords effortlessly! A fast, powerful tool for ethical hacking and cybersecurity testing. Precision meets speed—no lock stays closed forever!</p>
+          <a href="https://github.com/Ravi2718/Password-Cracker" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="row">
+        <img src="./img/project/AI.jpg" alt="Virtual Mouse Controller Project">
+        <div class="layer">
+          <h5>🖱️ Virtual Mouse Controller 🎯 Using Hand Tracking ✋</h5>
+          <p>Control your mouse cursor and simulate clicks using hand gestures with MediaPipe and Python.</p>
+          <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="row">
+        <img src="./img/project/Nsdl.png" alt="Sign-Language-Detection">
+        <div class="layer">
+          <h5>🎯 Sign-Language-Detection ✋</h5>
+          <p>AI-powered system that instantly translates sign language into text, speech, and video using computer vision and voice recognition for seamless communication.</p>
+          <a href="https://github.com/Ravi2718/Sign-Language-Detection.git" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="row">
+        <img src="./img/project/password.jpg" alt="Password">
+        <div class="layer">
+          <h5>🔐 Password Strength Meter</h5>
+          <p>A simple web app that analyzes password strength in real time, rates it, and estimates crack time based on length and character types.</p>
+          <a href="https://github.com/Ravi2718/Password_Strength_Meter.git" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="row">
+        <img src="./img/project/AI.jpg" alt="TODO">
+        <div class="layer">
+          <h5>✨ Todo List App with Flask & Modern CSS</h5>
+          <p>A minimalist Flask todo app with add, complete, and delete features. Includes a dynamic background, responsive design, and clean UI—ideal for learning Flask or boosting productivity.</p>
+          <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="row">
+        <img src="./img/project/PORT.jpg" alt="Port Scanning Project">
+        <div class="layer">
+          <h5>Port Scanning 🔍 & Risk Assessment ⚠️</h5>
+          <p>Automated port scanning and risk assessment with Python + Nmap for efficient VAPT, categorizing risks and providing mitigation strategies.</p>
+          <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-vulnerabilityassessment-activity-7295011206942076928-x2Wo" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+        <!-- Project 2 -->
+      <div class="row">
+        <img src="./img/project/DNS.jpg" alt="DNS Spoofing Project">
+        <div class="layer">
+          <h5>🔍 DNS Spoofing 💻</h5>
+          <p>I explored DNS spoofing beyond misleading online claims, faced modern security challenges, and learned that hands-on persistence is key to real cybersecurity understanding.</p>
+          <a href="https://www.linkedin.com/posts/raviprasadm_cybersecurity-ethicalhacking-dnsspoofing-activity-7291674197246754818-1eWy" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="row">
+        <img src="./img/project/Pass.png" alt="Password Cracker Project">
+        <div class="layer">
+          <h5>🛠️🔑 Password Cracker ⚡💻</h5>
+          <p>Unlock forgotten passwords effortlessly! A fast, powerful tool for ethical hacking and cybersecurity testing. Precision meets speed—no lock stays closed forever!</p>
+          <a href="https://github.com/Ravi2718/Password-Cracker" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="row">
+        <img src="./img/project/AI.jpg" alt="Virtual Mouse Controller Project">
+        <div class="layer">
+          <h5>🖱️ Virtual Mouse Controller 🎯 Using Hand Tracking ✋</h5>
+          <p>Control your mouse cursor and simulate clicks using hand gestures with MediaPipe and Python.</p>
+          <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="row">
+        <img src="./img/project/Nsdl.png" alt="Sign-Language-Detection">
+        <div class="layer">
+          <h5>🎯 Sign-Language-Detection ✋</h5>
+          <p>AI-powered system that instantly translates sign language into text, speech, and video using computer vision and voice recognition for seamless communication.</p>
+          <a href="https://github.com/Ravi2718/Sign-Language-Detection.git" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="row">
+        <img src="./img/project/password.jpg" alt="Password">
+        <div class="layer">
+          <h5>🔐 Password Strength Meter</h5>
+          <p>A simple web app that analyzes password strength in real time, rates it, and estimates crack time based on length and character types.</p>
+          <a href="https://github.com/Ravi2718/Password_Strength_Meter.git" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="row">
+        <img src="./img/project/AI.jpg" alt="TODO">
+        <div class="layer">
+          <h5>✨ Todo List App with Flask & Modern CSS</h5>
+          <p>A minimalist Flask todo app with add, complete, and delete features. Includes a dynamic background, responsive design, and clean UI—ideal for learning Flask or boosting productivity.</p>
+          <a href="https://github.com/Ravi2718/Virtual-Mouse-Controller-Using-Hand-Tracking" target="_blank">
+            <i class='bx bxs-face-mask' style="color: aliceblue;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Add other projects in similar format -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="Services">
+    <div class="container">
+      <h1 class="sub-title">My <span>Services</span></h1>
+      <div class="services-grid">
+        <div class="service-card"><i class='bx bx-code'></i><h3>Web Development</h3><p>Modern web design and development.</p></div>
+        <div class="service-card"><i class='bx bx-shield-quarter'></i><h3>Cybersecurity</h3><p>Ethical hacking, VAPT, risk mitigation.</p></div>
+        <div class="service-card"><i class='bx bxl-android'></i><h3>Software Development</h3><p>Python, Java, mobile & desktop apps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="Contact" class="contact-section">
+    <h2 class="contact-title">Contact</h2>
+    <div class="contact-box">
+    <form id="contact-form" method="POST" action="https://formsubmit.co/ravigeetha915@gmail.com" class="contact-form">
+      <!-- Name and Mobile -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name here." required />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile no</label>
+          <input id="mobile" type="tel" name="mobile" placeholder="Enter your mobile number here." required />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email id here." required />
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message here." rows="5" required></textarea>
+      </div>
+
+      <!-- Hidden Fields for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_subject" value="New Contact Form Message" />
+      <input type="hidden" name="_next" value="javascript:void(0);" />
+      <input type="hidden" name="_autoresponse" value="Thank you! I’ll get back to you soon." />
+      <input type="hidden" name="_cc" value="ravigeetha915@gmail.com" />
+
+      <div class="form-submit">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+
+    </div>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919360462915" class="whatsapp-float" target="_blank">
+      <img src="./img/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+  </section>
+
+  
+  <!-- JS -->
+  <script src="./files/script.js" defer></script>
 </body>
 </html>
