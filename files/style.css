@@ -57,20 +57,27 @@ html {
 
 
 /* Mobile Navigation - Vertical Menu */
+/* Mobile Navigation */
 @media (max-width: 767px) {
+    .header {
+        padding: 15px 5%;
+    }
+    
     .navbar {
         position: fixed;
         top: 70px;
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.95);
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 40px 0;
-        transition: 0.5s;
+        transition: left 0.5s ease;
         z-index: 99;
+        overflow-y: auto;
     }
     
     .navbar.active {
@@ -79,7 +86,7 @@ html {
     
     .navbar a {
         margin: 15px 0;
-        font-size: 24px;
+        font-size: 20px;
         padding: 10px 20px;
         width: 80%;
         text-align: center;
@@ -93,6 +100,7 @@ html {
         width: 30px;
         height: 21px;
         cursor: pointer;
+        z-index: 100;
     }
     
     .menu-toggle span {
@@ -521,7 +529,7 @@ h1, h2 {
 }
 
 .contact-form button:hover {
-  background-color: #a573ff;
+  background-color: #000000;
 }
 
 /* WhatsApp Floating Button */
@@ -938,14 +946,41 @@ h1, h2 {
     margin-top: 2.5%;
     opacity: 1;
 }
+/* About Image Hover Effect (Matches Profile Image) */
+.about-img img.abt-res {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid transparent; /* Match your profile image's border */
+}
 
+.about-img:hover img.abt-res {
+  /* Identical to profile image hover */
+  transform: scale(1.02);
+  filter: brightness(1.08);
+  cursor: pointer;
+  
+  /* Blue Glow Effect */
+  box-shadow: 
+    0 0 15px rgba(0, 238, 255, 0.7),
+    0 0 30px rgba(0, 238, 255, 0.4);
+  
+  /* Border Pulse */
+  border-color: rgba(0, 238, 255, 0.5);
+  animation: borderPulse 1.5s infinite;
+}
+
+/* Keyframes (same as profile image) */
+@keyframes borderPulse {
+  0% { border-color: rgba(0, 238, 255, 0.3); }
+  50% { border-color: rgba(0, 238, 255, 0.8); }
+  100% { border-color: rgba(0, 238, 255, 0.3); }
+}
 .abt-res {
     width: 100%;
     height: auto;
     max-width: 492px;
     max-height: 492px;
     border-radius: 90px;
-    border: #0ef 5px solid;
+    border: rgba(0, 238, 255, 0) 5px solid;
 }
 
 .about-text {
@@ -1310,7 +1345,7 @@ h1, h2 {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  background: #111;
+  background: #11111100;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -1843,8 +1878,109 @@ h1, h2 {
         opacity: 1;
     }
 }
-/* ============ Mobile First Responsive Design ============ */
 
+/* ===== Profile Image - Optimized ===== */
+.profile-img-container:hover img.responsive {
+  transform: scale(1.02); /* Tiny zoom effect */
+  filter: brightness(1.03); /* Slight lightening */
+  cursor: pointer; /* Indicates interactivity */
+  /* Blue Glow Effect */
+  box-shadow: 
+    0 0 15px rgba(0, 238, 255, 0.7),
+    0 0 30px rgba(0, 238, 255, 0.4);
+  
+  /* Brightness Boost */
+  filter: brightness(1.08);
+  
+  /* Subtle Scale */
+  transform: scale(1.02);
+  
+  /* Border Pulse */
+  border: 1px solid rgba(0, 238, 255, 0.5);
+  animation: borderPulse 1.5s infinite;
+  
+}
+
+@keyframes borderPulse {
+  0% { border-color: rgba(0, 238, 255, 0.3); }
+  50% { border-color: rgba(0, 238, 255, 0.8); }
+  100% { border-color: rgba(0, 238, 255, 0.3); }
+}
+/* Profile Image Styling */
+/* Profile Image Container - Now only for positioning */
+.profile-img-container {
+  position: absolute;
+  right: 10%;
+  bottom: 32%; /* Slightly lowered position */
+  width: 600px; /* Increased size */
+  height: 320px;
+  animation: slideUP 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  z-index: 10;
+}
+
+/* Profile Image - Display at natural size */
+.profile-img-container img.responsive {
+  display: block; /* Remove inline spacing */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* No forced dimensions - uses image's native size */
+}
+/* Add these media queries at the end of your existing CSS */
+@media (max-width: 992px) { /* Tablet */
+  .profile-img-container {
+    width: 450px;
+    height: 240px;
+    right: 5%;
+    bottom: 25%;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .profile-img-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 600/320; /* Maintains your original proportion */
+    right: auto;
+    bottom: auto;
+    margin: 30px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) { /* Small Mobile */
+  .profile-img-container {
+    max-width: 300px;
+  }
+}
+/*====================
+/* Animation Only */
+@keyframes slideUP {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-img-container {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
 /* General Mobile Styles (applies to all screens below 768px) */
 @media (max-width: 767px) {
     /* Header/Navigation */
